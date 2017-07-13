@@ -72,9 +72,13 @@ Here are the steps to test the application
 http://<IP>:<PORT>/getAllTrades
 
 3. Save Trades using a rest client like postman.
+
 URL: http://192.168.99.100:31993/create
+
 Http-Method: Post
+
 ContentType: Application/Json
+
 Body:
     {
         "tradeId": "ABCD",
