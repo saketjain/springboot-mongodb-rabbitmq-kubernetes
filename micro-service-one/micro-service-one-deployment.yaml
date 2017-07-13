@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    name: micro-service-one
+  name: micro-service-one
+spec:
+  template:
+    metadata:
+      labels:
+        name: micro-service-one
+    spec:
+      containers:
+      - image: micro-service-one:v1
+        name: micro-service-one
+        ports:
+        - containerPort: 8080

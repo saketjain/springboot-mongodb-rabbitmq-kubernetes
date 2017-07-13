@@ -1,0 +1,4 @@
+kubectl run mongo --image=mongo:latest --port=27017
+
+kubectl expose deployment mongo
+

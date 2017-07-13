@@ -1,0 +1,4 @@
+kubectl run rabbitmq --image=rabbitmq:latest --port=5672
+
+kubectl expose deployment rabbitmq
+

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: micro-service-one
+  name: micro-service-one
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    name: micro-service-one
+  type: NodePort
